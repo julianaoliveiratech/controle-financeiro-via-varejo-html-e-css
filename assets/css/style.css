@@ -1,0 +1,28 @@
+@import url('../css/header.css');
+@import url('../css/main.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --fundo-principal: #FFFFFF;
+    --cor-da-fonte-principal: #333333;
+    --fonte-principal: 'Lato', sans-serif;
+    --fundo-barra-superior: #E0E0E0;
+    --fundo-do-toggle-menu: #333333;
+    --cor-da-fonte-toggle-menu: #FFFFFF;
+    --fundo-da-fonte-do-toggle-menu: #C4C4C4;
+    --cor-da-fonte-toggle-menu-hover: #333333;
+    --cor-da-borda-input: #979797;
+    --fundo-btn-at: #333333;
+    --cor-da-fonte-btn-at: #FFFFFF;
+    --cor-da-borda-nova-transacao: #979797;
+    --cor-da-borda-caixa-tp: #979797;
+    --fundo-do-menu: #FFFFFF;
+    --cor-da-fonte-do-menu: #333333;
+}
+
+body {
+    background-color: var(--fundo-principal);
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-size: 14px;
+}

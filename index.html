@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Controle Financeiro | Via Varejo</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+</head>
+
+<body>
+    <header class="barra-sp-tp">
+        <img src="assets/img/logo.svg" alt="Logo Controle Financeiro Via Varejo" class="barra__logo">
+        <h1 class="barra__titulo">Controle Financeiro</h1>
+        <input type="checkbox" id="toggle-menu" class="barra__menu">
+        <label for="toggle-menu">
+            <span class="icone-menu"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg></span>
+        </label>
+        <ul class="lista-menu">
+            <div class="lista-menu__x">
+                <span class="botao-sair"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFFFFF"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg></span>
+            </div>
+            <li class="lista-menu__item"><a href="/" class="lista-menu__link">Cadastro de Transações</a></li>
+            <li class="lista-menu__item"><a href="/" class="lista-menu__link">Apagar Dados</a></li>
+        </ul>
+    </header>
+
+    <header class="barra-tld">
+        <div class="barra-tld__caixa">
+            <img src="assets/img/logo.svg" alt="Logo Controle Financeiro Via Varejo" class="barra__logo">
+            <h1 class="barra__titulo">Controle Financeiro</h1>
+            <div class="barra-tld__menu">
+                <ul class="menu">
+                    <li class="menu__item"><a href="/" class="menu__link">Cadastro de Transações</a></li>
+                    <li class="menu__item"><a href="/" class="menu__link">Apagar Dados</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-sp">
+        <section class="content-sp__formulario">
+            <form>
+                <label for="tipo-transacao" class="content-sp__nome">Tipo de Transação</label>
+                <input list="compra-venda" class="content-sp__campo">
+                <datalist id="compra-venda">
+                    <option value="Compra">
+                    <option value="Venda">
+                </datalist>
+
+                <label for="nome-mercadoria" class="content-sp__nome">Nome da Mercadoria</label>
+                <input type="text" class="content-sp__campo">
+
+                <label for="valor" class="content-sp__nome">Valor</label>
+                <input type="text" class="content-sp__campo">
+                <input type="submit" value="Adicionar Transação" class="content-sp__btn-at">
+            </form>
+        </section>
+
+        <section class="content-sp__extrato">
+            <h2 class="content-sp__extrato-titulo">Extrato de Transações</h2>
+            <p class="content-sp__extrato-mensagem">Nenhuma transação cadastrada.</p>
+        </section>
+    </main>
+
+    <main class="content-tp">
+        <section class="content-tp__formulario">
+            <div class="content-tp__caixa">
+                <div class="content-tp__formulario-titulo">Nova Transação</div>
+                <form>
+                    <div class="content-tp__form-campos">
+                        <div class="content-tp__caixa-tipo-transacao">
+                            <label for="tipo-transacao" class="content-tp__nome">Tipo de Transação</label>
+                            <input list="compra-venda" class="content-tp__campo">
+                            <datalist id="compra-venda">
+                                <option value="Compra">
+                                <option value="Venda">
+                            </datalist>
+                        </div>
+
+                        <div class="content-tp__caixa-nome-mercadoria">
+                            <label for="nome-mercadoria" class="content-tp__nome">Nome da Mercadoria</label>
+                            <input type="text" class="content-tp__campo">
+                        </div>
+
+                        <div class="content-tp__caixa-valor">
+                            <label for="valor" class="content-tp__nome">Valor</label>
+                            <input type="text" class="content-tp__campo">
+                        </div>
+                    </div>
+                    <div class="content-tp__btn">
+                        <input type="submit" value="Adicionar Transação" class="content-tp__btn-at">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="content-tp__extrato">
+            <h2 class="content-tp__extrato-titulo">Extrato de Transações</h2>
+            <p class="content-tp__extrato-mensagem">Nenhuma transação cadastrada.</p>
+        </section>
+    </main>
+
+    <main class="content-tld">
+        <div class="content-tld__caixa">
+            <section class="content-tld__formulario">
+                <div class="content-tld__formulario-titulo">Nova Transação</div>
+                <form>
+                    <div class="content-tld__form-campos">
+                        <div class="content-tp__caixa-tipo-transacao">
+                            <label for="tipo-transacao" class="content-tld__nome">Tipo de Transação</label>
+                            <input list="compra-venda" class="content-tld__campo">
+                            <datalist id="compra-venda">
+                                <option value="Compra">
+                                <option value="Venda">
+                            </datalist>
+                        </div>
+
+                        <div class="content-tld__caixa-nome-mercadoria">
+                            <label for="nome-mercadoria" class="content-tld__nome">Nome da Mercadoria</label>
+                            <input type="text" class="content-tld__campo">
+                        </div>
+
+                        <div class="content-tld__caixa-valor">
+                            <label for="valor" class="content-tld__nome">Valor</label>
+                            <input type="text" class="content-tld__campo">
+                        </div>
+                    </div>
+                    <div class="content-tld__btn">
+                        <input type="submit" value="Adicionar Transação" class="content-tld__btn-at">
+                    </div>
+                </form>
+            </section>
+
+            <section class="content-tld__extrato">
+                <h2 class="content-tld__extrato-titulo">Extrato de Transações</h2>
+                <p class="content-tld__extrato-mensagem">Nenhuma transação cadastrada.</p>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>
